@@ -2,13 +2,10 @@
 ################
 MY FINAL PROJECT
 ################
-*******
-MY BLOG
-*******
-by Erica Liz
 
 A SIMPLE BLOG
 ^^^^^^^^^^^^^
+by Erica Liz
 
 The following blog was created by using Python along with some Flask,
 HTML, and CSS, and some SQLite3 for database usage. The blog ulitlizes
