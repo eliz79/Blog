@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+
+<title>Blog Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        body {
+            font-family: arial, helvetica, sans-serif;
+            font-size: 14px;
+            color: black;
+            background-color: #CC9933;
+            margin: 20px;
+            padding: 0;
+        }
+        h1 {
+            color: #ffc;
+            background-color: #900;
+            font-size: 2em;
+            margin: 0;
+            margin-bottom: 7px;
+            padding: 4px;
+            font-style: italic;
+            text-align: center;
+            letter-spacing: 0.5em;
+            border-bottom-style: solid;
+            border-bottom-width: 0.5em;
+            border-bottom-color: #c00;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <DIV ALIGN=CENTER>
+      <h1>Please login below:</h1>
+      <br>
+      <form action="" method="post">
+        <input type="text" placeholder="Username" name="username" value="{{request.form.username }}">
+         <input type="password" placeholder="Password" name="password" value="{{request.form.password }}">
+        <input class="btn btn-default" type="submit" value="Login">
+      </form>
+
+{% endblock %}

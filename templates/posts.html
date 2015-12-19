@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Comments Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        body {
+            font-family: arial, helvetica, sans-serif;
+            font-size: 14px;
+            color: black;
+            background-color: #CC9933;
+            margin: 20px;
+            padding: 0;
+        }
+
+        p {
+            line-height: 21px;
+        }
+
+        h1 {
+            color: #ffc;
+            background-color: #900;
+            font-size: 2em;
+            margin: 0;
+            margin-bottom: 7px;
+            padding: 4px;
+            font-style: italic;
+            text-align: center;
+            letter-spacing: 0.5em;
+            border-bottom-style: solid;
+            border-bottom-width: 0.5em;
+            border-bottom-color: #c00;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+        <div id="content">
+            <div class="post">
+                <h1><DIV ALIGN=LEFT>Comments</DIV></h1>
+                <h3><DIV ALIGN=LEFT>Leave your comments below:</DIV></h3>
+                <p><div align=center><a><img src="http://localhost:5000/static/chicken.png"></h1></a></DIV></p>
+        <form type="submit" value="clear">
+            <b>Name:</b>
+            <br>
+            <textarea <input type="text" name="name" placeholder="Name"></textarea><br>
+            <br>
+            <b>Comment:</b>
+            <br>
+            <textarea <input type="text" name="comment" placeholder="Leave your comment here."></textarea><br>
+        <form action="/submit" method="post">
+            <input type="hidden" name="id" value="{{ post.id }}">
+            <input type="Submit" value="Add a comment">
+        <form action="/clear">
+        <input type="submit" value="Clear">
+
+
+
+
+        </form>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+
+<title>Blog</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="static/bootstrap.min.css" rel="stylesheet" type="text/css">
+   <style type="text/css">
+    body {
+        font-family: arial, helvetica, sans-serif;
+        font-size: 14px;
+        color: black;
+        background-color: #CC9933;
+        margin: 20px;
+        padding: 0;
+    }
+    p {
+        line-height: 21px;
+    }
+    h1 {
+        color: #ffc;
+        background-color: #900;
+        font-size: 2em;
+        margin: 0;
+        margin-bottom: 7px;
+        padding: 4px;
+        font-style: italic;
+        text-align: center;
+        letter-spacing: 0.5em;
+        border-bottom-style: solid;
+        border-bottom-width: 0.5em;
+        border-bottom-color: #c00;
+    }
+   </style>
+  </head>
+  <div class="container">
+      <h1><b><DIV ALIGN=LEFT>Leave a comment</DIV></b></h1>
+      <br>
+  <form method='post'>
+  Name:<input type='text' name='name' placeholder='Name'/></br>
+  <br>
+  Comment:<br>
+  <textarea name='comment' placeholder='Enter comments here'></textarea><br>
+  <br>
+  <!--<input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />-->
+  <input type='submit' value='Submit'/><br>  
+  </form>
+    <p><DIV ALIGN=CENTER>Click <a href="/logout"><b>here</b></a> to logout.</p></DIV>
+      {% for message in get_flashed_messages() %}
+        {{ message }}
+      {% endfor %}
+      </DIV>
+{% endblock %}
