@@ -19,5 +19,5 @@ by clicking anoher controller for leaving messages. AS well they can
 clear messages. 
 
 
-USERNAME AND PASSWORD: "test" (lowercase)Final Project
+USERNAME AND PASSWORD: "test" (lowercase)
 
